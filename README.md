@@ -104,7 +104,7 @@ Inference는 infer_data_dir 경로에 있는 이미지들에 대해 detection + 
 ```
 예) Predicted Class : [3, 2, 1, 6]
 ```
-![alt text]()
+![alt text](https://github.com/Jaep0805/SNU_ReID_2023/blob/master/img/tmpC9DA.png)
 
 # Test
 
