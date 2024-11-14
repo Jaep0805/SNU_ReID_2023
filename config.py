@@ -5,12 +5,12 @@ def parse_training_args(parser):
     # Directory parameters
     
     #MOT17
-    parser.add_argument('--infer_data_dir', type=str, default='/data/jaep0805/projects/2023/main_jae/DATASET/MOT17/train/MOT17-04-FRCNN_query/images', help='Only for inference')
-    parser.add_argument('--dataset_root_dir', type=str, default='/data/jaep0805/projects/2023/main_jae/DATASET', help='root data dir for gallery, gallery must be placed like "{root_dir}/{dataset_name}_reid/gallery" ')
+    parser.add_argument('--infer_data_dir', type=str, default='/DATASET/MOT17/train/MOT17-04-FRCNN_query/images', help='Only for inference')
+    parser.add_argument('--dataset_root_dir', type=str, default='/DATASET', help='root data dir for gallery, gallery must be placed like "{root_dir}/{dataset_name}_reid/gallery" ')
     parser.add_argument('--dataset_name', type=str, default='MOT17', help='for setting gallery path')
     
-    parser.add_argument('--detection_weight_file', type=str, default='/data/jaep0805/projects/2023/test/SNU_ReID/weights/detection_MOT17.pt')
-    parser.add_argument('--reid_weight_file', type=str, default='/data/jaep0805/projects/2024/SNU_ReID_wo_octloss/weights/market1501_wo_octloss.ckpt')
+    parser.add_argument('--detection_weight_file', type=str, default='/weights/detection.pt')
+    parser.add_argument('--reid_weight_file', type=str, default='/market1501_wo_octloss.ckpt')
     
     # #PRW_yolo
     # parser.add_argument('--infer_data_dir', type=str, default='../DATASET/PRW_yolo/test/images', help='Only for inference')
