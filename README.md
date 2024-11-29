@@ -9,7 +9,7 @@ Python >= 3.7.16
 
 ```
 git clone https://github.com/Jaep0805/SNU_ReID_2023.git
-cd SNU_ReID
+cd SNU_ReID_2023
 conda env create -f environment.yml
 conda activate reid
 ```
