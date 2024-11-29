@@ -5,13 +5,13 @@
 # Environments
 Pytorch >= 1.13.0
 
-Python >= 3.7.0
+Python >= 3.7.16
 
 ```
-git clone -b main_jae --single-branch https://github.com/Jaep0805/SNU_ReID_2023.git
+git clone https://github.com/Jaep0805/SNU_ReID_2023.git
 cd SNU_ReID
-conda create --name ENV_NAME --file requirements.txt
-conda activate ENV_NAME
+conda env create -f environment.yml
+conda activate reid
 ```
 
 
@@ -104,6 +104,8 @@ Inference는 infer_data_dir 경로에 있는 이미지들에 대해 detection + 
 ```
 예) Predicted Class : [3, 2, 1, 6]
 ```
+
+Visualized example of inference result
 ![alt text](https://github.com/Jaep0805/SNU_ReID_2023/blob/master/img/tmpC9DA.png)
 
 # Test

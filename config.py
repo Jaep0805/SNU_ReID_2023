@@ -9,8 +9,8 @@ def parse_training_args(parser):
     parser.add_argument('--dataset_root_dir', type=str, default='/DATASET', help='root data dir for gallery, gallery must be placed like "{root_dir}/{dataset_name}_reid/gallery" ')
     parser.add_argument('--dataset_name', type=str, default='MOT17', help='for setting gallery path')
     
-    parser.add_argument('--detection_weight_file', type=str, default='/weights/detection.pt')
-    parser.add_argument('--reid_weight_file', type=str, default='/market1501_wo_octloss.ckpt')
+    parser.add_argument('--detection_weight_file', type=str, default='./weights/detection.pt')
+    parser.add_argument('--reid_weight_file', type=str, default='./weights/market1501_wo_octloss.ckpt')
     
     # #PRW_yolo
     # parser.add_argument('--infer_data_dir', type=str, default='../DATASET/PRW_yolo/test/images', help='Only for inference')
