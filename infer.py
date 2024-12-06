@@ -124,7 +124,8 @@ class ReIDPerson:
         #JH todo
         #reid_checkpoint = torch.load(self.args.reid_weight_file)
         #self.reid_network.load_state_dict(self.reid_checkpoint['model_state_dict'], strict = False)
-        self.reid_network.load_state_dict(self.reid_checkpoint, strict = False)
+        self.reid_network.load_state_dict(self.reid_checkpoint, strict = False) 
+        #self.reid_network.load_state_dict(self.reid_checkpoint['state_dict'], strict = False) #FOR PRW
 
         with torch.no_grad():
             self.detection_network.eval()

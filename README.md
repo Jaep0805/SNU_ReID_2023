@@ -59,7 +59,7 @@ conda activate reid
 
 Inference 및 Test에 필요한 웨이트는 detection weight와 reid weight가 있다.
 
-[여기](https://drive.google.com/file/d/1lmekmWJgyUKafVJRDvLlkKuMhEnGyexc/view?usp=sharing)에서 필요한 웨이트를 다운받아 weights폴더에 위치하면된다.
+[여기](https://drive.google.com/drive/folders/1mcQNyWaiSyd_PTtTooDABUVmuEIiXIb5?usp=sharing)에서 필요한 웨이트를 다운받아 weights폴더에 위치하면된다.
 
 이후 config.py에서 
 
@@ -107,6 +107,13 @@ Inference는 infer_data_dir 경로에 있는 이미지들에 대해 detection + 
 
 Visualized example of inference result
 ![alt text](https://github.com/Jaep0805/SNU_ReID_2023/blob/master/img/tmpC9DA.png)
+
+
+Examples of PRW dataset inference results
+
+![Alt text](img/c1s1_001051.jpg?raw=true "Example frame1")
+![Alt text](img/c1s1_001351.jpg?raw=true "Example frame2")
+![Alt text](img/c1s1_001376.jpg?raw=true "Example frame3")
 
 # Test
 
